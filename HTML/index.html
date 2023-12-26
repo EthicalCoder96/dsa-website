@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Swiper demo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="/STYLE/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <!-- Navigation -->
+  <!-- Swiper -->
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide para para1">
+        <h1>Linked List <i class="fa-solid fa-link"></i></h1>
+        <p>A linked list is a linear data structure where elements are stored in nodes, and each node points to the next node in the sequence. It provides dynamic memory allocation and efficient insertion and deletion operations.</p>
+        <a href="https://www.geeksforgeeks.org/what-is-linked-list/" target="_blank"><button>Check it out</button></a>
+      </div>
+      <div class="swiper-slide para para2">
+        <h1>Searching <i class="fa-solid fa-magnifying-glass"></i></h1>
+        <p>Searching is the process of finding the location or occurrence of a particular item (or key) in a collection of data, such as an array, list, or database. The objective is to determine whether the item is present and, if so, to identify its position within the data structure.</p>
+        <a href="https://www.geeksforgeeks.org/searching-algorithms/" target="_blank"><button>Check it out</button></a>
+      </div>
+      <div class="swiper-slide para para3">
+        <h1>Sorting <i class="fa-solid fa-arrow-up-wide-short"></i></h1>
+        <p>Sorting is the process of arranging a collection of items in a specific order, often ascending or descending based on some criteria. The objective is to organize the data in a way that facilitates efficient retrieval, searching, and other operations.</p>
+        <a href="https://www.geeksforgeeks.org/sorting-algorithms/" target="_blank"><button>Check it out</button></a>
+      </div>
+      <div class="swiper-slide para para4">
+        <h1>Stack <i class="fa-solid fa-layer-group"></i></h1>
+        <p>A stack is a linear data structure that follows the Last In, First Out (LIFO) principle. Elements are added and removed from the same end, known as the top. It supports operations such as push (to add an element) and pop (to remove the top element).</p>
+        <a href="https://www.geeksforgeeks.org/stack-data-structure/" target="_blank"><button>Check it out</button></a>
+      </div>
+      <div class="swiper-slide para para5">
+        <h1>Queue <i class="fa-solid fa-person-walking-dashed-line-arrow-right"></i></h1>
+        <p>A queue is a linear data structure that follows the First In, First Out (FIFO) principle. Elements are added at the rear and removed from the front. It supports operations such as enqueue (to add an element) and dequeue (to remove the front element).</p>
+        <a href="https://www.geeksforgeeks.org/queue-data-structure/" target="_blank"><button>Check it out</button></a>
+      </div>
+      <div class="swiper-slide para para6">
+        <h1>Trees <i class="fa-solid fa-folder-tree"></i></h1>
+        <p>A tree is a hierarchical data structure consisting of nodes connected by edges. The topmost node is called the root, and each node can have zero or more child nodes. Nodes with no children are called leaves.</p>
+        <a href="https://www.geeksforgeeks.org/introduction-to-tree-data-structure-and-algorithm-tutorials/" target="_blank"><button>Check it out</button></a>
+      </div>
+    </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-pagination"></div>
+  </div>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      spaceBetween: 30,
+      centeredSlides: true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
+</body>
+
+</html>

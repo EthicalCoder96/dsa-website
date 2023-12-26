@@ -1,0 +1,87 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: poppins,sans-serif;
+}
+html,
+body {
+    position: relative;
+    height: 100%;
+}
+
+body {
+    background: #eee;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #000;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+/* Code for swiper JS */
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.para{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+}
+.para h1{
+    margin-bottom: 15px;
+    font-size: 2.5rem;
+    border-bottom: 3px solid rgb(0, 0, 0);
+    font-weight: 800;
+}
+.para p{
+    width: 720px;
+    padding: 20px;
+    font-size: 1rem;
+    letter-spacing: 1.2px;
+}
+.para button{
+    margin-top: 10px;
+    height: 50px;
+    width: 100px;
+    border: 2.3px solid rgb(107, 107, 253);
+    border-radius:10px;
+    cursor: pointer;
+    transition: 0.3s ease-in;
+}
+.para button:hover{
+    border: 2.3px solid rgb(85, 85, 255);
+    background-color: rgb(107, 107, 253);
+    color: #fff;
+}
+
+/* Background images */
+/* .para1{
+    background-image: url('/IMAGES/1_W4jMNTNkr-a-dEhE-lcRzQ.webp');
+    background-color: rgba(0, 0, 0, 0.5);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+} */
